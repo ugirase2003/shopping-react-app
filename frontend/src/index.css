@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: sans-serif;
+}
+
+@keyframes loader {
+    0% {
+      width: 100%;
+    }
+    100% {
+      width: 0;
+    }
+  }
+  
+  .animate-loader {
+    animation: loader 2s linear infinite;
+  }
+  
