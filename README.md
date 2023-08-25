@@ -1,4 +1,4 @@
-# Shopping React App README
+# Shopping React App README (swtich to master branch)
 
 Welcome to the README file for your Shopping React App! This document will guide you through the setup, features, and usage of the app, which incorporates a variety of technologies including React, Tailwind CSS, Express, MongoDB Atlas, bcryptjs for password encryption, and Redux for state management. The app provides login and register functionalities with secure password storage, JWT token authentication, a responsive design, category-wise shopping, a cart system, and more. Please note that the app is still under development and undergoing bug fixes.
 
@@ -34,7 +34,7 @@ Before you begin, ensure you have the following:
 
 Follow these steps to set up and run the app:
 
-1. **Clone Repository:** Clone this repository to your local machine using `git clone [repository URL]`.
+1. **Clone Repository:** Clone this repository to your local machine using `https://github.com/ugirase2003/shopping-react-app.git`.
 
 2. **Client Setup:**
    - Navigate to the `frontend` directory using `cd frontend`.
