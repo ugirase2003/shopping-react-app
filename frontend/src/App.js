@@ -29,7 +29,7 @@ const App = () => {
 <Cart_Size_Provider>
   <Navbar/>
 <Routes>
-   <Route exact path='/' element={<ItemsList/>}/>
+   <Route exact path='/home' element={<ItemsList/>}/>
     <Route exact path='/cart' element={<Cart/> }/>
     <Route exact path='/productdetail/:productid' element={<SelectedProduct/>}/>
     <Route exact path='/categorywise/:category/:subCat' element={<SubCategoryWiseView/>}/>
