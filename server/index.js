@@ -34,7 +34,7 @@ async function main(){
 
 
 server.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', 'https://steady-crostata-7949bb.netlify.app');
+    res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
     res.header(
       'Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization,  X-PINGOTHER'
     );

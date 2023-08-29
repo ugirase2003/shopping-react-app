@@ -14,7 +14,7 @@ const Carousel = ({ slides }) => {
     setCurr(curr === slides.length - 1 ? 0 : curr + 1)
     console.log(curr)
   }
-  // setInterval(()=>next(),6000)
+  setInterval(()=>next(),6000)
 
   return (
     <SkeletonTheme baseColor="white" highlightColor="#C8C6C5 ">
@@ -34,10 +34,10 @@ const Carousel = ({ slides }) => {
 
         <div className='absolute inset-0  flex justify-between items-center'>
           <button className=' ml-6' onClick={prev}>
-            <AiOutlineLeft className='bg-slate-300/80 rounded-full p-2' size={40} />
+            <AiOutlineLeft className=' rounded-full p-2' size={40} />
           </button>
           <button className=' mr-6' onClick={next}>
-            <AiOutlineRight className='bg-slate-300/80 rounded-full p-2 bg-black' size={40} />
+            <AiOutlineRight className='rounded-full p-2 ' size={40} />
           </button>
         </div>
         <div className='absolute bottom-4  right-0 left-0'>

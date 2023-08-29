@@ -28,7 +28,7 @@ const SubCategoryWiseView = () => {
   console.log("renderd");
   const fetch = async () => {
     const res = await axios
-      .get(process.env.REACT_APP_BASE_URL+`/categorywise/${category}/${subCat}`)
+      .get(process.env.REACT_APP_BASE_URL+`/categorywise/${category}/${subCat.toLowerCase}`)
       .catch((e) => {
         console.log("error", e);
       });

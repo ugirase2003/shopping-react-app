@@ -18,4 +18,9 @@ body{
   .animate-loader {
     animation: loader 2s linear infinite;
   }
+  @media screen and (max-width:500px) {
+   body{
+    font-size: 14px;
+   }
+  }
   

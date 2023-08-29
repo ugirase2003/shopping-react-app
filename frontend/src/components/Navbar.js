@@ -69,11 +69,11 @@ export const Navbar = () => {
   const menu = [
     {
       category: "Men",
-      subCategory: ["electronics", "Jeans", "Jackets", "Shirts"],
+      subCategory: ["Footwear", "Jeans", "Jackets", "Tshirt"],
     },
     {
       category: "Women",
-      subCategory: ["jewelery", "Jeans", "Jackets", "Shirts"],
+      subCategory: [ "Jeans", "Jackets", "Shirts"],
     },
     { category: "Kids", subCategory: ["T-shirt", "Jeans", "Jackets"] },
   ];

@@ -37,6 +37,11 @@ const Main_Category = () => {
     }
   };
 
+  const calPercentage=(mrp,off_price)=>{
+    return Math.round(off_price/mrp*100) ;
+}
+
+
   useEffect(() => {
     fetch();
     return () => {
@@ -53,14 +58,15 @@ const Main_Category = () => {
     return (
       <div key={index}>
         <Link to={"/productdetail/" + item._id}>
-          <div className="w-full min-h-[300px]  rounded-md shadow-md cursor-pointer flex flex-col justify-between hover:scale-105 duration-150 h-full bg-white ">
-            <img src={item.img[0]} />
-            <div className="p-3">
-              <p className="font-semibold">{item.brand}</p>
-              <p className="text-gray-600 ">{item.title}</p>
-              <div className="w-full flex justify-between pr-2 flex-col md:flex-row flex-wrap">
-                <span className="font-bold">{item.off_price + " Rs."}</span>{" "}
-                <span>{"MRP: " + item.o_price}</span>
+          <div className="max-w-[200px] sm:min-h-[300px]  cursor-pointer flex flex-col justify-between hover:scale-105 duration-150 h-full bg-white ">
+          <img src={item.img[1]} className="  h-56 w-full mx-auto object-contain"  />
+            <div className="p-2 mx-auto ">
+              <p className="font-semibold text-sm">{item.brand}</p>
+              <p className="text-gray-600  text-xs">{item.title.length>30?item.title.slice(0,36)+'...':item.title}</p>
+              <div className="w-full flex items-center ">
+                <span className="font-bold text-sm">{item.off_price + " Rs."}</span>{" "}
+                <s className="text-[10px] text-gray-600 ml-[0.5px]">{"MRP: " + item.o_price}</s>
+                <span className="text-[9px] font-bold text-orange-500 ml-[0.5px]">{'('+calPercentage(item.o_price,item.off_price)+'%)OFF'}</span>
               </div>
             </div>
           </div>
@@ -100,7 +106,7 @@ const Main_Category = () => {
               Sorry We Don't Have Stuff For You
             </div>
           ) : (
-            <div className="relative grid text-sm sm:text-base sm:grid-cols-4 grid-cols-2 lg:grid-cols-6 gap-8 p-6 bg shadow-lg  mt-5 min-h-[200px]">
+            <div className="relative  grid text-sm sm:text-base sm:grid-cols-4 grid-cols-2 lg:grid-cols-6  gap-2 bg shadow-lg  mt-5 min-h-[200px] ">
               {renderlist}
             </div>
           )}

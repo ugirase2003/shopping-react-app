@@ -16,12 +16,12 @@ const ItemsList = () => {
     },
     {
       category: "Kids",
-      offer: "40%-80%",
+      offer: "30%-50%",
       img: "https://images.pexels.com/photos/1620760/pexels-photo-1620760.jpeg?auto=compress&cs=tinysrgb&w=600",
     },
     {
       category: "Women",
-      offer: "40%-80%",
+      offer: "25%-60%",
       img: "https://images.pexels.com/photos/914668/pexels-photo-914668.jpeg?auto=compress&cs=tinysrgb&w=600",
     },
   ];
@@ -30,15 +30,15 @@ const ItemsList = () => {
   return (
     <SkeletonTheme baseColor="white" highlightColor="#C8C6C5 ">
       <div className="max-w-[1400px] mx-auto">
-        <div className=" mb-5  mt-5 h-[80px] sm:h-[150px]  w-full relative overflow-hidden shadow-md flex items-center ">
+        <div className=" mb-5  mt-5 h-[80px] sm:h-[150px] border  w-full relative overflow-hidden shadow-md grid grid-cols-2 ">
           {smallBanner ? null : <Skeleton className="absolute w-full h-full" />}
           <img
             src="https://img1.junaroad.com//assets/images/mobileNotif/img-1690634797428.jpg?crsl_pos=3"
-            className="w-full h-full my-auto  object-contain flex-1"
+            className="w-full  max-h-[150px] object-contain "
           />
           <img
             src="https://img1.junaroad.com//assets/images/mobileNotif/img-1679910119705.jpg?crsl_pos=3"
-            className="w-full h-full my-auto  object-contain flex-1"
+            className="w-full max-h-[150px]   object-contain "
             onLoad={() => {
               setSmallBanner(true);
             }}
@@ -47,8 +47,10 @@ const ItemsList = () => {
         <div>
           <Carousel
             slides={[
+              
+              "https://sslimages.shoppersstop.com/sys-master/root/h00/h28/30739403505694/adios-old-school-web--2023-088--23--new-sizee.jpg",
               "https://img.freepik.com/premium-vector/best-season-sale-banner-design-template_2239-1175.jpg",
-              "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/b7/b3/eb/caption.jpg?w=1200&h=-1&s=1",
+              "https://sslimages.shoppersstop.com/sys-master/root/h50/h42/30721089470494/rakhi-main-web---hp-page-main-crousel-20230821.jpg"
             ]}
           />
         </div>
@@ -63,7 +65,7 @@ const ItemsList = () => {
         </div>
 
         <div>
-          <div className="relative bg-purple-50 grid text-sm sm:text-base sm:grid-cols-4 grid-cols-2 lg:grid-cols-6 gap-8 p-6 bg shadow-lg  mt-5 min-h-[200px]">
+          <div className="relative py-2 grid text-sm sm:text-base sm:grid-cols-4 grid-cols-2 lg:grid-cols-6  gap-0 bg shadow-lg  mt-5 min-h-[200px] place-items-center">
             <ItemCard />
           </div>
         </div>
