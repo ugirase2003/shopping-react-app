@@ -80,6 +80,3 @@ Contributions are welcome! If you find any bugs or want to contribute, feel free
 
 If you have any questions or need assistance, you can reach out to ugirase2003@gmail.com.
 
----
-
-Feel free to customize this README template according to your app's specifics. This version includes the use of bcryptjs for password encryption and Redux for state management. Providing clear instructions and usage details will help users and collaborators understand your project better. Good luck with your Shopping React App development!
