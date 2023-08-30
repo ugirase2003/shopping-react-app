@@ -34,7 +34,7 @@ async function main(){
 
 
 server.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', 'https://64eeba78681e2e276f8c044f--illustrious-babka-d75c85.netlify.app');
+    res.header('Access-Control-Allow-Origin', 'https://incredible-capybara-662c01.netlify.app/');
     res.header(
       'Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization,  X-PINGOTHER'
     );
