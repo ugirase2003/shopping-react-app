@@ -58,14 +58,14 @@ const ItemsList = () => {
         <p className="font-bold text-lg mt-8 text-center uppercase ">
           SHOP by category
         </p>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-10   items-center justify-center mt-8 w-[80%] sm:w-full mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-10   items-center justify-center mt-8 w-[90%] sm:w-full mx-auto">
           {Category_Offer_Data.map((item) => {
             return <CategoryOfferCard item={item} />;
           })}
         </div>
 
         <div>
-          <div className="relative py-2 grid text-sm sm:text-base sm:grid-cols-4 grid-cols-2 lg:grid-cols-6  gap-0 bg shadow-lg  mt-5 min-h-[200px] place-items-center">
+          <div className="relative py-2 grid text-sm sm:text-base sm:grid-cols-4 grid-cols-2 lg:grid-cols-6  gap-0 bg shadow-lg  mt-5 min-h-[200px]  ">
             <ItemCard />
           </div>
         </div>

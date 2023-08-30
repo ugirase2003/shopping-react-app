@@ -7,6 +7,7 @@ import img1 from "../components/assets/img/img4.png";
 import { useTransition, animated } from "@react-spring/web";
 import { UserContext } from "../components/Context/UserContext";
 import { Cart_Context } from "../components/Context/CartSizeContext";
+import GoToTop from "../components/subComp/GoToTop";
 
 const Login = () => {
   const userCon = useContext(UserContext);
@@ -190,6 +191,7 @@ const Login = () => {
           <p className="mt-10 text-center text-sm text-gray-500"></p>
         </div>
       </div>
+      <GoToTop/>
     </div>
   );
 };

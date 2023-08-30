@@ -20,17 +20,17 @@ const MenuItem = ({ item, nav }) => {
       onMouseLeave={() => setOpenSub(false)}
     >
       <span className="w-full  px-2 flex items-center">
-        <Link
+        <p
           onMouseEnter={() => setOpenSub(true)}
           onClick={() => {
             setOpenSub(!openSub);
-            if (nav.nav != null) nav.setNav(!nav.nav);
+           
           }}
           className="h-16  justify-center flex items-center min-w-[100px]  md:hover:border-b-purple-600 md:border-b-white md:border-b-2 duration-100 w-full md:w-fit m-auto   px-3  "
-          to={"/categorywise/" + item.category}
+       
         >
           {item.category}
-        </Link>
+        </p>
         {"subCategory" in item ? (
           <AiOutlineDown
             className={` top-2 md:hidden right-3 ${

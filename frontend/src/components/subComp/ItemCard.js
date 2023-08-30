@@ -36,7 +36,7 @@ export const ItemCard = () => {
     return (
       <div key={index}>
         <Link to={"/productdetail/" + item._id}>
-          <div className="max-w-[200px] sm:min-h-[200px] cursor-pointer flex flex-col justify-between hover:scale-105 duration-150 h-full bg-white ">
+          <div className="max-w-[200px] min-h-full  cursor-pointer flex flex-col justify-between hover:scale-105 duration-150 h-full bg-white ">
             <img src={item.img[1]} className="  h-56 w-full mx-auto object-contain"  />
             <div className="p-2 ">
               <p className="font-semibold text-sm">{item.brand}</p>

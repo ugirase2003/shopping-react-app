@@ -5,6 +5,7 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 import img1 from'../components/assets/img/img4.png'
 import { useTransition,animated } from '@react-spring/web';
+import GoToTop from '../components/subComp/GoToTop';
 
 
 
@@ -149,6 +150,7 @@ const Register = () => {
       
       </div>
     </div>
+    <GoToTop/>
     </div>
       )
 }

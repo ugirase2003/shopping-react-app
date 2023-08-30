@@ -69,13 +69,13 @@ export const Navbar = () => {
   const menu = [
     {
       category: "Men",
-      subCategory: ["Footwear", "Jeans", "Jackets", "Tshirt"],
+      subCategory: ["Tshirt","Footwear", "Jeans", "Jackets", ],
     },
     {
       category: "Women",
-      subCategory: [ "Jeans", "Jackets", "Shirts"],
+      subCategory: [ "Tshirt","Jeans", "Jackets", "Shirts"],
     },
-    { category: "Kids", subCategory: ["T-shirt", "Jeans", "Jackets"] },
+    { category: "Kids", subCategory: ["Tshirt", "Jeans", "Jackets"] },
   ];
 
   return (
@@ -101,7 +101,7 @@ export const Navbar = () => {
           }  duration-300`}
         >
           <h1 className="  font-bold font-serif text-purple-700 ml-6 mt-2 text-2xl">
-            Shoppie
+           <Link to={'/'}>Shoppie</Link> 
           </h1>
           <AiOutlineClose
             className="md:hidden cursor-pointer absolute right-0 top-4 mr-2 "
@@ -126,7 +126,7 @@ export const Navbar = () => {
         {/* big screen nav */}
         <nav className={`flex justify-between items-center h-full`}>
           <h1 className=" md:text-4xl font-bold font-serif text-purple-700 ml-6 text-3xl">
-            Shoppie
+          <Link to={'/'}>Shoppie</Link> 
           </h1>
           <AiOutlineMenu
             className="md:hidden cursor-pointer absolute left-0 ml-2 "
@@ -134,7 +134,7 @@ export const Navbar = () => {
             onClick={() => setNav(!nav)}
           />
 
-          <ul className="  hidden md:flex h-full  ">
+          <ul className="  hidden md:flex h-full   ">
             <Link
               to={"/"}
               className="px-1   flex flex-col  items-center justify-center  cursor-pointer  hover:border-b-purple-600 border-b-white border-b-2 duration-100 relative h-16  mb-1"
@@ -147,10 +147,10 @@ export const Navbar = () => {
           </ul>
           {console.log("pro open", proSetting)}
 
-          <div className="flex h-full items-center  ">
+          <div className="flex h-full items-center    ">
             {userCon.user != null ? (
-              <Link className="text-sm mr-6  font-bold " to={"/"}>
-                Hello , {userCon.user.name}
+              <Link className="text-sm mr-1  font-bold flex  " to={"/"}>
+                Hi, <span>{userCon.user.name.length>10?userCon.user.name.slice(0,9):userCon.user.name}</span>
               </Link>
             ) : null}
             <Link className={`h-full flex items-center`}>
@@ -161,7 +161,7 @@ export const Navbar = () => {
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
                 aria-hidden="true"
-                className=" w-6 mr-6 h-full  hover:cursor-pointer  "
+                className=" w-6 mr-3 h-full  hover:cursor-pointer  "
                 id="pro"
                 onClick={(e) => {
                   /* eslint-disable */

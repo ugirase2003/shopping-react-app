@@ -9,8 +9,9 @@ const CategoryOfferCard = ({ item }) => {
   const [imgLoad, setImgLoad] = useState(false);
 
   return (
+    <SkeletonTheme baseColor="white" highlightColor="#C8C6C5 ">
     <Link to={"/categorywise/" + item.category}>
-      <div className="mx-auto sm:h-[450px]  h-[350px]  w-[80%] relative flex  hover:cursor-pointer ">
+      <div className="mx-auto sm:h-[400px] border-[16px] rounded-sm border-purple-100 h-[300px]  w-[80%] relative flex  hover:cursor-pointer ">
         {!imgLoad ? (
           <div className="h-full w-full absolute ">
             <Skeleton
@@ -40,6 +41,7 @@ const CategoryOfferCard = ({ item }) => {
         </div>
       </div>
     </Link>
+    </SkeletonTheme>
   );
 };
 

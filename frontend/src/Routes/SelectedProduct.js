@@ -11,6 +11,7 @@ import Rating from "../components/subComp/Rating";
 import { useTransition, animated } from "@react-spring/web";
 import { Cart_Context } from "../components/Context/CartSizeContext";
 import { UserContext } from "../components/Context/UserContext";
+import GoToTop from "../components/subComp/GoToTop";
 
 const SelectedProduct = () => {
     // design for product which is clicked
@@ -279,6 +280,7 @@ const SelectedProduct = () => {
                     </div>
                 </>
             )}
+            <GoToTop/>
         </div>
     );
 };

@@ -7,6 +7,7 @@ import { useTransition, animated } from "@react-spring/web";
 import Operation_Modal from "../components/subComp/Operation_Modal";
 import Edit_Ill from "../components/assets/img/edit_png.jpg";
 import { Cart_Context } from "../components/Context/CartSizeContext";
+import GoToTop from "../components/subComp/GoToTop";
 
 const Edit_Profile = () => {
   const [loader, setLoader] = useState(false);
@@ -319,6 +320,7 @@ const Edit_Profile = () => {
           </div>
         </form>
       </div>
+      <GoToTop/>
     </div>
   );
 };

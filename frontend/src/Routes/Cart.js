@@ -7,7 +7,8 @@ import empty_cart from "../components/assets/img/empty_cart.jpg";
 import { useTransition, animated } from "@react-spring/web";
 import { Cart_Context } from "../components/Context/CartSizeContext";
 import { UserContext } from "../components/Context/UserContext";
-import {  useNavigate } from "react-router-dom";
+import {  Link, useNavigate } from "react-router-dom";
+import GoToTop from "../components/subComp/GoToTop";
 
 const Cart = () => {
   const navigate = useNavigate();
@@ -82,15 +83,15 @@ const Cart = () => {
           <div>
             <p>
               Deliver to:
-              <p className="font-bold inline-block">Ujjwal Girase, 424002</p>
+              <p className="font-bold inline-block">{userCont.user!=null?userCont.user.name:'Login'} 424002</p>
             </p>
             <p className="text-xs">
-              23 Dynandeep Colony Near mohan complex , Valvadi Dhule{" "}
+             (Dummy) 23 Dynandeep Colony Near mohan complex , Valvadi Dhule{" "}
             </p>
           </div>
-          <button className="p-2 font-bold text-xs text-purple-700 border hover:bg-purple-100 border-purple-700  ">
+          <Link className="p-2 font-bold text-xs text-purple-700 border hover:bg-purple-100 border-purple-700  " to={'/user/editProfile'}>
             CHANGE ADDRESS
-          </button>
+          </Link>
         </div>
 
 {/* render the give cart list */}
@@ -214,6 +215,7 @@ const Cart = () => {
           </button>
         </div>
       </div>
+      <GoToTop/>
     </div>
   );
 };

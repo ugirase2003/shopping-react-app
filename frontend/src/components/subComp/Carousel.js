@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai'
 import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
+import { Link } from 'react-router-dom';
 
 const Carousel = ({ slides }) => {
   const [imgLoad, setImgLoad] = useState(false)
@@ -12,13 +13,14 @@ const Carousel = ({ slides }) => {
   }
   const next = () => {
     setCurr(curr === slides.length - 1 ? 0 : curr + 1)
-    console.log(curr)
+    
   }
-  setInterval(()=>next(),6000)
+ 
 
   return (
     <SkeletonTheme baseColor="white" highlightColor="#C8C6C5 ">
-      <div className='overflow-hidden relative max-w-[1400px] h-[250px] sm:h-[450px]  mx-auto '>
+      <div className='overflow-hidden relative max-w-[1400px] h-[25vh] sm:h-[450px]  mx-auto '>
+        <Link to={'/categorywise/Men'}>
         <div className={`flex transition-transform ease-out duration-500 h-full`} style={{ transform: `translateX(-${curr * 100}%)` }}>
 
           {slides.map((img, index) => {
@@ -34,10 +36,10 @@ const Carousel = ({ slides }) => {
 
         <div className='absolute inset-0  flex justify-between items-center'>
           <button className=' ml-6' onClick={prev}>
-            <AiOutlineLeft className=' rounded-full p-2' size={40} />
+            <AiOutlineLeft className=' rounded-full p-2  bg-purple-100/80' size={40} />
           </button>
           <button className=' mr-6' onClick={next}>
-            <AiOutlineRight className='rounded-full p-2 ' size={40} />
+            <AiOutlineRight className='rounded-full p-2 bg-purple-100/80 ' size={40} />
           </button>
         </div>
         <div className='absolute bottom-4  right-0 left-0'>
@@ -47,6 +49,7 @@ const Carousel = ({ slides }) => {
             }
           </div>
         </div>
+        </Link>
       </div>
     </SkeletonTheme>
   )
