@@ -53,7 +53,7 @@ Follow these steps to set up and run the app:
 
 4. **Access the App:** Open your browser and navigate to `http://localhost:3000` to access the app.
 
-5. Live Demo: Check out the live demo of the app:https://funny-lolly-116ba7.netlify.app/
+5. Live Demo: Check out the live demo of the app:https://64eeb22eae32382189f7bb08--euphonious-swan-8acd01.netlify.app/
      Backend: Render
      Frontend: Netlify
    
