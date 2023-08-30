@@ -1,5 +1,7 @@
 # Shopping React App README (swtich to master branch)
 live link:https://64eed46a681e2e38ab8c0441--dapper-unicorn-6a274d.netlify.app/
+
+
 Welcome to the README file for your Shopping React App! This document will guide you through the setup, features, and usage of the app, which incorporates a variety of technologies including React, Tailwind CSS, Express, MongoDB Atlas, bcryptjs for password encryption, and Redux for state management. The app provides login and register functionalities with secure password storage, JWT token authentication, a responsive design, category-wise shopping, a cart system, and more. Please note that the app is still under development and undergoing bug fixes.
 
 ## Technologies Used
