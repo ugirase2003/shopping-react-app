@@ -55,7 +55,7 @@ Follow these steps to set up and run the app:
 
 4. **Access the App:** Open your browser and navigate to `http://localhost:3000` to access the app.
 
-5. Live Demo: Check out the live demo of app:https://64eed46a681e2e38ab8c0441--dapper-unicorn-6a274d.netlify.app/
+5. Live Demo: Check out the live demo of app:https://dapper-unicorn-6a274d.netlify.app/
      Backend: Render
      Frontend: Netlify
    
