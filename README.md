@@ -1,4 +1,4 @@
-# Shopping React App README (swtich to master branch)
+# Shopping React App README 
 live link:https://dapper-unicorn-6a274d.netlify.app/
 
 
